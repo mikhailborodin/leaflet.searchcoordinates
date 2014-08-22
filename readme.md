@@ -1,4 +1,10 @@
 ## Using plugin
+### Requires
+
+* jquery.js
+* bootstrap.js
+* bootstrap.css
+
 Adding search of coordinates control.
 
     searchControl = L.control.searchcoords();
