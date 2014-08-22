@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../node_modules/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="../src/bootstrap.min.css" />
+    <link rel="stylesheet" href="../src/L.Control.SearchCoords.css" />
+</head>
+<body>
+    <div id="map" style="width: 640px; height: 480px;"></div>
+    <script src="../node_modules/leaflet/dist/leaflet-src.js"></script>
+    <script src="../dist/jquery.min.js" ></script>
+    <script src="../dist/bootstrap.min.js" ></script>
+    <script src="../src/L.Control.SearchCoords.js" ></script>
+    <script type="text/javascript">
+        var layer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        });
+
+        // You can add the control via the settings object
+        var map = L.map('map', {
+            layers: [layer]
+        }).setView([55.7, 49.0], 8);
+        searchControl = L.control.searchcoords();
+        map.addControl(searchControl);
+    </script>
+</body>
+</html>

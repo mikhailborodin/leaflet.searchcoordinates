@@ -1,0 +1,82 @@
+.leaflet-find-actions {
+	display: none;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 30px;
+	top: 0;
+}
+
+.leaflet-right .leaflet-find-actions {
+    right: 26px;
+    left: auto;
+}
+
+.leaflet-find-actions li {
+	float: left;
+}
+
+.leaflet-find-actions li:first-child a {
+	border-left: none;
+}
+
+.leaflet-find-actions li:last-child a {
+	-webkit-border-radius: 0 4px 4px 0;
+	        border-radius: 0 4px 4px 0;
+}
+
+.leaflet-right .leaflet-find-actions li:first-child a {
+	-webkit-border-radius: 4px 0 0 4px;
+	        border-radius: 4px 0 0 4px;
+}
+
+.leaflet-right .leaflet-find-actions li:last-child a {
+	-webkit-border-radius: 0;
+	        border-radius: 0;
+}
+
+.leaflet-left .leaflet-find-actions-visible a:first-child {
+    -webkit-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.leaflet-left .leaflet-find-actions-visible a:last-child {
+    -webkit-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.leaflet-right .leaflet-find-actions-visible a:first-child {
+    -webkit-border-top-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.leaflet-right .leaflet-find-actions-visible a:last-child {
+    -webkit-border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.leaflet-find-actions a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+	background-color: #919187;
+	border-left: 1px solid #AAA;
+	color: #FFF;
+	font: 11px/19px "Helvetica Neue", Arial, Helvetica, sans-serif;
+	line-height: 30px;
+	width: 100px;
+	height: 30px;
+}
+
+.leaflet-find-actions a:hover {
+	background-color: #A0A098;
+}
+.input-sm {
+    width: 95px!important;
+    margin-left: 5px;
+}
+.btn-leaflet {
+    padding: 4px 12px;
+    margin-left: 5px;
+}
